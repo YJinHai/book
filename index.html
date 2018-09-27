@@ -6,7 +6,13 @@
     <title>book</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <p>{{title}}</p>
+      <p v-if="showSub">{{subTitle}}</p>
+      <ul>
+        <li v-for="todo in todos">{{todo}}</li>
+      </ul>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
