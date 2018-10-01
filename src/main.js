@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import Todolist from './Todolist'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
@@ -16,13 +18,9 @@ Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
-  data: {
-    title: 'hello vuejs',
-    subTitle: "this my first project",
-    todos: [
-      'learn',
-      'coding',
-      'recode'     
-    ]
-  }
+  components: {
+    Todolist
+  },
+  template:'<Todolist />'
+
 })
